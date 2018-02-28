@@ -1,0 +1,360 @@
+body {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./images/background3.jpg) ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+.navbar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 15vh;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #08088A;
+}
+li{
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.5vw;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #040445;
+}
+h1 {
+  color: #08088A;
+  position: absolute;
+  font-size: 4vw;
+  text-decoration: underline;
+  font-weight: bolder;
+  left: 40%;
+  top: 20%;
+}
+.grids{
+  position: absolute;
+  top: 2vh;
+  display: grid;
+  grid-template-columns: 23vw 23vw 23vw;
+  grid-template-rows: 45vh 45vh;
+  grid-template-areas:
+  "dance reading music"
+  "travel movies sleep";
+}
+.dance {
+  grid-area: dance;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  position: absolute;
+  border: none;
+  top: 7vh;
+  left: 3vh;
+  margin: 2% 5%;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+.reading {
+  grid-area: reading;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  position: absolute;
+  border: none;
+  top: 7vh;
+  left: 20vh;
+  margin: 2% 5%;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+.music {
+  grid-area: music;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  border: none;
+  position: absolute;
+  left: 37vh;
+  margin: 2% 5%;
+  top: 7vh;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+.travel {
+  grid-area: travel;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  border: none;
+  position: absolute;
+  top: 8.5vh;
+  left: 3vh;
+  margin: 2% 5%;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+.movies {
+  grid-area: movies;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  border: none;
+  position: absolute;
+  top: 8.5vh;
+  left: 20vh;
+  margin: 2% 5%;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+.sleep {
+  grid-area: sleep;
+  color: white;
+  padding: 1.2vh 1.5vw;
+  border: none;
+  position: absolute;
+  top: 8.5vh;
+  left: 37vh;
+  margin: 2% 5%;
+  height: 40vh;
+  width: 55vh;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  -moz-animation: fade-in 2s forwards 0.5s ease 1;
+  -webkit-animation: fade-in 2s forwards 0.5s ease 1;
+  -ms-animation: fade-in 2s forwards 0.5s ease 1;
+  -o-animation: fade-in 2s forwards 0.5s ease 1;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1:
+  }
+}
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1:
+  }
+}
+@-ms-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1:
+  }
+}
+@-o-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1:
+  }
+}
+.image {
+  display: block;
+  height: 40vh;
+  width: 55vh;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: blue;
+}
+.dance:hover .overlay {
+  opacity: 0.8;
+}
+.reading:hover .overlay {
+  opacity: 0.8;
+}
+.music:hover .overlay {
+  opacity: 0.8;
+}
+.travel:hover .overlay {
+  opacity: 0.8;
+}
+.movies:hover .overlay {
+  opacity: 0.8;
+}
+.sleep:hover .overlay {
+  opacity: 0.8;
+}
+.text {
+  text-align: center;
+  position: absolute;
+  top:47%;
+  left: 47%;
+  width: 40vh;
+  height: 40vh;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: 32vh 0 0 -6vw;
+  border: 1.5vw solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1.5vw inset #0000FF;
+	border-right: 1.5vw inset #0080FF;
+	border-bottom: 1.5vw inset #0000FF;
+	border-left: 1.5vw inset #0080FF;
+  width: 8vw;
+  height: 8vw;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }}
+}
+@-o-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom 1s;
+  -moz-animation: animatebottom 1s;
+  -ms-animation: animatebottom 1s;
+  -o-animation: animatebottom 1s;
+  animation-name: animatebottom 1s;
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100vw; opacity:0 }
+  to { bottom:0vw; opacity:1 }
+}
+@-moz-keyframes animatebottom {
+  from { bottom:-100vw; opacity:0 }
+  to { bottom:0vw; opacity:1 }
+}
+@-ms-keyframes animatebottom {
+  from { bottom:-100vw; opacity:0 }
+  to { bottom:0vw; opacity:1 }
+}
+@-o-keyframes animatebottom {
+  from { bottom:-100vw; opacity:0 }
+  to { bottom:0vw; opacity:1 }
+}
+@keyframes animatebottom {
+  from { bottom:-100vw; opacity:0 }
+  to { bottom:0vw; opacity:1 }
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}

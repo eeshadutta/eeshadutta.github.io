@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <div class="navbar">
+        <ul>
+	        <li><a href="index.html"><b>Home</b></a></li>
+	        <li><a href="aboutme.html"><b>About Me</b></a></li>
+	        <li><a href="interests.html"><b>Interests</b></a></li>
+	        <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5071.908430422802!2d78.34454618756158!3d17.44715297443137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a30ccbaccd%3A0x65fd9ee02405fd2a!2sGirls&#39;+Hostel!5e0!3m2!1sen!2sin!4v1510520616101" allowfullscreen></iframe>
+      </div>
+      <div class="social">
+        <h3>Get Connected</h3>
+        <table>
+          <tr>
+            <td>
+              <a href="https://www.facebook.com/eesha.dutta.5" target="_blank">
+                <img src="./images/fblogo.png" alt="fb">
+              </a>
+            </td>
+            <td>
+              <a href="https://plus.google.com/u/0/107227060663187409716" target="_blank">
+                <img src="./images/googlelogo.png" alt="g+">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://gitlab.com/eeshadutta" target="_blank">
+                <img src="./images/gitlablogo.png" alt="git">
+              </a>
+            </td>
+            <td>
+              <a href="mailto:eesha.dutta@research.iiit.ac.in" target="_blank">
+                <img src="./images/emaillogo.jpg" alt="mail">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="form">
+        <form>
+  		    <label>Name</label>
+  		    <input type="text" name="name"><br><br>
+  		    <label>Email</label>
+  		    <input type="text" name="email"><br><br>
+  		    <label>Message</label>
+  		    <input type="text" name="message" style="height: 75px; overflow: scroll;"><br><br>
+  		    <input type="submit" value="Drop Your Message" style="margin: auto;">
+  	    </form>
+      </div>
+    </div>
+    <script src="loader.js">
+    </script>
+  </body>
+</html>
