@@ -1,27 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Julius%20Sans%20One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Over%20the%20Rainbow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville%20Cursive' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact%20Gothic' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eesha Dutta</title>
-    <link rel="stylesheet" type="text/css" href="homestyle.css">
-  </head>
-  <body>
-    <div class="navbar">
-	    <ul>
-		    <li><a href="index.html"><b>Home</b></a></li>
-		    <li><a href="aboutme.html"><b>About Me</b></a></li>
-		    <li><a href="interests.html"><b>Interests</b></a></li>
-		    <li><a href="contact.html"><b>Contact</b></a></li>
-	    </ul>
+    <link rel="icon" href="images/logo.jpeg" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <div class="dropdown-button">+</div>
+        <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
-    <div>
-      <img class="profilepic" src="images/profilepic.jpg" alt="profilepic">
-      <h1>Eesha Dutta</h1>
-      <h3>Freshman at IIIT, Hyderabad</h3>
-      <p>I am an undergraduate student pursuing BTech and MS in Computer Science</p>
+
+    <div class="back1" id="home">
+        <div class="login-button"></div>
+
+        <div class="quote"></div>
+
+        <div class="name">Eesha Dutta</div>
+
+        <table class="firsttable intro">
+            <tr>
+                <td style="width: 8%;">
+                    <h1 class="hi">Hey there!</h1>
+                </td>
+                <td style="width: 22%; text-align: justify;">
+                    <p class="overview">I am currently pursuing Computer Science from IIIT Hyderabad. I did my Schooling from St. Joseph High School, Pune and my Senior Secondary from Suryadatta Junior College. I am very passionate about everything that I pick up and have
+                        a die-hard attitude to get it done. I love to take up new challenges and learn new things. I believe that hard work and persistence are the key to success. I want to be part of a team solving problems using cutting edge tools and
+                        technology. I am currently pursuing Research in NLP while also focusing on Software Development and Competitive Programming.</p>
+                    <p class="overview">Outside of work, I love to read and dance. I am a huge Potterhead. I have learnt Kathak dance for 10 years and I have also learnt a few other dance forms. I also love to watch TV shows and movies. I am a member of the Apex body in
+                        my University which is an anti-ragging body and is responsible for mentoring freshers when they enter college. I believe in making a difference in the lives of others. Look around to know more about me!
+                    </p>
+                </td>
+            </tr>
+        </table>
     </div>
-    <div>
+
+    <div class="back2" id="work">
+        <div class="work">Resume</div>
+
+        <div class="skills">
+            <h1>SKILLS</h1>
+            <ul class="skills-list">
+                <li><b>Programming Languages</b>:<br> C, C++, Python, Java, JavaScript, GoLang</li>
+                <li><b>Web Development</b>:<br> HTML, CSS, Flask, Django, ReactJS, JQuery</li>
+                <li><b>Systems</b>:<br> Operating Systems, Database Systems, Computer Networks</li>
+                <li><b>Others</b>:<br> Git, SQL, WebGL, OpenGL, MATLAB</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h1>EXPERIENCE</h1>
+            <ul class="experience-list">
+                <li><b>Research Undergraduate at KCIS, IIIT (May 2019-Present)</b><br>Pursuing research in Natural Language Processing under Prof Manish Srivastava.
+                    <ul>
+                        <li>Working on "Code Mixed Analysis of Social Media Texts" to analyse texts which contain more than one language</li>
+                        <li>Creation of datasets by scraping various websites</li>
+                        <li>Exploratory Data Analytics to Analyse the data and results</li>
+                    </ul>
+                </li>
+                <li><b>Teaching Assistant at IIIT (Jan-May 2020)</b><br>TA for Design and Analysis of Software Systems course. Responsibilities include mentoring teams of students building Software Systems, conducting tutorials, preparing and evaluating assignments
+                    and exams.</li>
+                <li><b>Software Development at Theodore Software Pvt Ltd (Aug-Nov 2018)</b><br>Contributed as part of Software Systems course to create a Web System for Handwritten Document Recognition using Django framework and CNN, RNN models for Computer
+                    Vision.
+                </li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <h1>PROJECTS</h1>
+            <ul class="projects-list">
+                <li><b>Smart Traffic Analysis</b>
+                    <a href="https://github.com/eeshadutta/Smart-Traffic-Analysis" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>A unified platform to detect traffic violations like overspeeding, breaking traffic lights, accidents from a CCTV feed. Built using ReactJS, Django and OpenCV.</li>
+                <li><b>Quiz App</b>
+                    <a href="https://github.com/eeshadutta/Quiz-App" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>Interactive Quiz App with multiple genres and types of questions, leaderboard feature and admin dashboard. Built in ReactJS and GoLang.</li>
+                <li><b>Community Question Answering</b>
+                    <a href="https://github.com/Paryul10/Community-Question_Answering" , target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>Implemented various ML models for Question Pair Similarity. Applied Siamese Networks along with various classification techniques.</li>
+                <li><b>Tic Tac Toe bot</b>
+                    <a href="https://github.com/eeshadutta/Extreme-Tic-Tac-Toe" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>An AI bot which can play Extreme Tic Tac Toe which consists of two 9X9 boards. Used Minimax Algorithm with Iterative Deepening Search and Alpha Beta Pruning.</li>
+                <li><b>C Shell</b>
+                    <a href="https://github.com/eeshadutta/CShell" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>Linux Shell built in C language from scratch. Implemented commands like ls, cd, pwd, pinfo, fg, bg, overkill, as well as features like background, foreground processes,
+                    IO redirection, signalling.</li>
+                <li><b>SQL Engine</b>
+                    <a href="https://github.com/eeshadutta/SQL-Engine" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>Implemented a mini SQL engine in python to implement SQL queries like select, project, aggregate, join using Command Line Interface.</li>
+                <li><b>Proxy Server</b>
+                    <a href="https://github.com/eeshadutta/Proxy-Server" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>HTTP Proxy Server which can handle multiple clients and servers, GET and POST requests, Blacklisting, Caching, Authentication of Users.</li>
+                <li><b>Subway Surfers</b>
+                    <a href="https://github.com/eeshadutta/Subway-Surfers" target="_blank"><img src="images/link.png" alt="link" class="link-img"></a><br>Subway Surfers clone built using WebGL implementing all functionalities of the original game.</li>
+            </ul>
+        </div>
+
+        <button class="resume-button">
+            <a href="https://docs.google.com/document/d/1wmQYNRoL4kIP4Gs6SjKJbIuZH1EW7E7-y1qMBCPEe8M/edit?usp=sharing" target="_blank">Here's my Complete Resume</a>
+        </button>
+
     </div>
-  </body>
+
+    <div class="back3" id="interests">
+        <div class="interests">Interests and Hobbies</div>
+
+        <div class="dancing">
+            <img src="images/dancing.jpg" alt="dancing" class="photo">
+            <div class="dance-overlay">
+                <div class="desc">
+                    <h1>Dancing</h1>
+                    <p>I was introduced to dance at the age of 5 when I started learning the Classical dance form, Kathak. I have learnt Kathak for 10 years and I continue to practice it. I have also picked up some other dance styles like Comtemporary, Hip-Hop
+                        and Bollywood.</p>
+                    <p>Dance is something that I really cherish and love to do. Dance gives one the freedom to use their whole body to express themselves. I can't stop myself from dancing when I listen to some catchy music or rhythm. It really helps me de-stress
+                        and get back to my daily routine with new energy and vigour!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reading">
+            <img src="images/reading.jpg" alt="reading" class="photo">
+            <div class="read-overlay">
+                <div class="desc">
+                    <h1>Reading</h1>
+                    <p>I am a voracious reader and have read many different books in different genres. I enjoy reading fiction novels and am a huge Potterhead; ask me anything about the Potter World ;P. I am also a fan of the Hunger Games, Divergent, Meluha
+                        Triology, and many of Sidney Sheldon's novels. </p>
+                    <p>Reading transport you to a totally different world. Books can make your imagination race through different places and different eras while sitting in one place. A good book is better than a best friend and will always be there to life
+                        your mood and make your day better!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="images/painting.jpg" alt="painting" class="photo">
+            <div class="paint-overlay">
+                <div class="desc">
+                    <h1>Painting</h1>
+                    <p>Painting is a hobby that I have picked up recently. So I am yet learning my way around it. I usually paint scenaries. And from whatever little I know of it, I am really enjoying it. Theres so much one can do with a canvas and a few
+                        color and brushes.</p>
+                    <p>Painting is a medium to express yourself without words. You can put down your imagination on a piece of paper for others to see. The creativity that goes behind painting also helps me in being creative with my work!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="music">
+            <img src="images/music.jpg" alt="music" class="photo">
+            <div class="music-overlay">
+                <div class="desc">
+                    <h1>Music</h1>
+                    <p>I spend a lot of time listening to music. You would always find me walking around campus with earphones. While I don't pursue any form of vocal or instrumental music, I love to listen to music of any kind. I mostly listen to Comtemporary
+                        music. </p>
+                    <p>Art in any form is an expression of the artists' emotions and thoughts. I often find myself connecting different songs to different incidents in my life. An evening spent listening to music, reading a book and some coffee is an evening
+                        well spent.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movies">
+            <img src="images/movies.jpeg" alt="movies" class="photo">
+            <div class="movies-overlay">
+                <div class="desc">
+                    <h1>Movies & TV Shows</h1>
+                    <p>I love to watch movies and TV shows in my free time. I often binge watch entire shows in one night. I love different thrillers - crime, drama, psychology. I also enjoy the comedy genre. I don't let language stop me from watching a
+                        good movie/show and have watched movies and shows in different languages.</p>
+                    <p>As a kid, I used to watch Matinee movies with my family every Sunday and thats where my love for movies started. Its really great to see the evolution of cinema over time - there's a difference in stories, backdrops, characters. Movies
+                        have played a very important role in keeping people informed about current times.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel">
+            <img src="images/travel.jpg" alt="travel" class="photo">
+            <div class="travel-overlay">
+                <div class="desc">
+                    <h1>Travel</h1>
+                    <p>I like to travel and explore various places. And the more you travel, you realise that our planet is beautiful place with so many different wonders. Every place is unique and has something to offer to each and every one. You also meet
+                        new people, try out different cuisines, learn more about different cultures and ways of life - its all very exciting.</p>
+                    <p>One of the things in my bucket list is to go on a solo World Trip to know more about different places, people and cultures as well as spend time with myself. Travelling is a great way to put your thoughts together and discover yourself
+                        while discovering new places.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer" id="contact">
+        <ul class="social">
+            <li class="social-list">
+                <a href="https://www.linkedin.com/in/eesha-dutta/" target="_blank" class="fa fa-linkedin"></a>
+            </li>
+            <li class="social-list">
+                <a href="https://github.com/eeshadutta" target="_blank" class="fa fa-github"></a>
+            </li>
+            <li class="social-list">
+                <a href="https://www.facebook.com/eesha.dutta.99" target="_blank" class="fa fa-facebook"></a>
+            </li>
+        </ul>
+
+        <p class="created">Eesha Dutta 2020</p>
+
+        <!-- <div class="comments">
+            <form action="/data" method="POST" class="comment-form">
+                <div>
+                    <input type="text" name="username" placeholder="Name" class="name-field"><br>
+                    <textarea name="input-comment" placeholder="Comment" rows="2" class="comment-field"></textarea>
+                    <button class="login-comments"></button>
+                    <input type="submit" class="submit-button" value="Post">
+                </div>
+            </form>
+
+            <div id="all-comments"></div>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
